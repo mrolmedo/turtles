@@ -10,6 +10,9 @@ spec:
   clusterNetwork:
     pods:
       cidrBlocks:
+      - 10.42.0.0/16
+    services: 
+      cidrBlocks:
       - 10.43.0.0/16
     serviceDomain: cluster.local
   controlPlaneRef:
