@@ -60,21 +60,7 @@ spec:
       kubernetesComponents:
         - cloudController
   files:
-    - path: "/var/lib/rancher/rke2/server/manifests/coredns-config.yaml"
-      owner: "root:root"
-      permissions: "0640"
-      content: |
-        apiVersion: helm.cattle.io/v1
-        kind: HelmChartConfig
-        metadata:
-          name: rke2-coredns
-          namespace: kube-system
-        spec:
-          valuesContent: |-
-            tolerations:
-              - key: "node.cloudprovider.kubernetes.io/uninitialized"
-                value: "true"
-                effect: "NoSchedule"
+    
     - path: "/var/lib/rancher/rke2/server/manifests/kubevip.yaml"
       owner: "root:root"
       permissions: "0640"
