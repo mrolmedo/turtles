@@ -55,8 +55,6 @@ metadata:
   name: ${CLUSTER_NAME}
   namespace: ${NAMESPACE}
 spec:
-  serverConfig:
-    
   files:
     
     - path: "/var/lib/rancher/rke2/server/manifests/kubevip.yaml"
