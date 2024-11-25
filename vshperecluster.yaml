@@ -56,9 +56,7 @@ metadata:
   namespace: ${NAMESPACE}
 spec:
   serverConfig:
-    disableComponents:
-      kubernetesComponents:
-        - cloudController
+    
   files:
     
     - path: "/var/lib/rancher/rke2/server/manifests/kubevip.yaml"
