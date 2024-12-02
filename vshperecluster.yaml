@@ -257,6 +257,7 @@ spec:
       labels:
         cluster.x-k8s.io/cluster-name: ${CLUSTER_NAME}
         cluster.x-k8s.io/control-plane: 'true'
+        cluster.x-k8s.io/deployment-name: controlplane-md-0
     spec:
       version: ${RKE2_VERSION}
       clusterName: ${CLUSTER_NAME}
