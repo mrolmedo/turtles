@@ -21,11 +21,13 @@ spec:
   controlPlaneRef:
     apiVersion: controlplane.cluster.x-k8s.io/v1beta1
     kind: RKE2ControlPlane
-    name: ${NAMESPACE}
+    namespace: ${NAMESPACE}
+    name: ${CLUSTER_NAME}
   infrastructureRef:
     apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
     kind: VSphereCluster
-    name: ${NAMESPACE}
+    namespace: ${NAMESPACE}
+    name: ${CLUSTER_NAME}
 ---
 apiVersion: infrastructure.cluster.x-k8s.io/v1beta1
 kind: VSphereCluster
