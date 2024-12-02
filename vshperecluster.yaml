@@ -300,5 +300,5 @@ spec:
       storagePolicyName: ""
       template: ${VSPHERE_TEMPLATE}
       thumbprint: ${VSPHERE_TLS_THUMBPRINT}
-
+---
   
