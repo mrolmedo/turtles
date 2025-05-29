@@ -1015,7 +1015,7 @@ data:
           volumes:
           - configMap:
               name: vsphere-cloud-config
-            name: vsphere-config-volume
+              name: vsphere-config-volume
       updateStrategy:
         type: RollingUpdate
 kind: ConfigMap
